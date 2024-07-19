@@ -1,14 +1,50 @@
 @import url(./root.css);
+
+.transition {
+    transition: all .3s linear;
+}
+
+.btn-signin:hover {
+    color: var(--color-red);
+    border: 2px var(--color-red) solid !important;
+}
+
+.btn-signin {
+    border: 2px transparent ;
+    width: 100px;
+    height: 40px;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+.line-1-1 {
+    transform-origin: left;
+    transform: rotate(35deg);
+    transition: all .4s linear;
+  }
+  .line-2 {
+    background-color: transparent !important;
+  }
+  .line-3 {
+    transform-origin: left;
+    transform: rotate(-35deg);
+    transition: all .4s linear;
+  }
+
 @media (max-width:992px) {
-    .nav-link {
+    .nav-links {
         display: flex;
         flex-direction: column;
         background-color: white !important;
-        width: 100%;
+        width: 50% !important;
+        height: 100%;
         position: fixed;
-        justify-content: center;
-        bottom: 0;
+        justify-content: center !important;
+        gap: 20px;
+    
         left: -100% !important;
+        align-items: center;
         top: 0%;
         z-index: 2;
         transition: all .5s linear !important;
@@ -20,7 +56,7 @@
 
     .menu-btn {
         width: 35px;
-        margin-top: 15px;
+        align-content: center;
         background: none;
         display: block;
         z-index: 3;
